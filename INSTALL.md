@@ -10,7 +10,7 @@ Você pode escolher entre as duas formas abaixo.
 
 ## Opção A: pacote completo com o Dolphin (recomendado)
 
-Arquivo: **`SuperMarioGalaxy2-VR-v0.1-completo-com-Dolphin.zip`**. Traz o **Dolphin VR Redux** (de [iChris4](https://github.com/iChris4/dolphinXR)) em modo portátil, já com as configurações do autor:
+Arquivo: **`SuperMarioGalaxy2-VR-v0.2-completo-com-Dolphin.zip`**. Traz o **Dolphin VR Redux** (de [iChris4](https://github.com/iChris4/dolphinXR)) em modo portátil, já com as configurações do autor:
 controles do Quest (`WiimoteNew.ini` e o perfil `Mario`), gráficos (`GFX.ini`, resolução interna, ajustes de VR do jogo), cheats ligados, os códigos do jogo e o mod.
 Nada é instalado no seu Dolphin atual e as suas configurações atuais não são tocadas: o pacote usa só a pasta dele (`User`).
 
@@ -26,7 +26,7 @@ O pacote é **portátil**: pode ficar em qualquer pasta, e para desinstalar bast
 
 ## Opção B: só o mod (você já tem o Dolphin VR Redux)
 
-Arquivo: **`SuperMarioGalaxy2-VR-v0.1.zip`**. Requer o **Dolphin VR Redux**, build com OpenXR (ramo *openxr-work*, [releases do iChris4](https://github.com/iChris4/dolphinXR/releases)).
+Arquivo: **`SuperMarioGalaxy2-VR-v0.2.zip`**. Requer o **Dolphin VR Redux**, build com OpenXR (ramo *openxr-work*, [releases do iChris4](https://github.com/iChris4/dolphinXR/releases)).
 
 1. Feche o Dolphin.
 2. Extraia o pacote em **qualquer pasta**. Só se o seu Dolphin for **portátil** (existe um `portable.txt` ao lado do `Dolphin.exe`) é que o pacote deve ser extraído dentro da pasta do Dolphin.
@@ -47,7 +47,7 @@ Se você já usa o mod do Galaxy 1, a instalação da opção B não mexe nos ar
 
 - **Trocar de câmera:** clique do analógico direito (primeira pessoa → câmera 200 → terceira pessoa). A troca só responde depois que o jogo entrou na fase.
 - **Menu do mod:** segure **B + Y**. Analógico para cima/baixo escolhe a linha, para os lados troca de aba, A muda o valor.
-- **Quadros por segundo:** aba **Jogo** → **Quadros/s** (60, 90 ou 120). Vale ao reabrir o jogo. Use 60 para a velocidade normal do jogo.
+- **Quadros por segundo:** aba **Jogo** → **Quadros/s** (60, 72, 90, 100 ou 120). Vale ao reabrir o jogo. O jogo continua na velocidade normal (60 passos por segundo) em qualquer valor: a opção **Velocidade do jogo em FPS alto** (mesma aba) pode ser trocada para *Acelera com o FPS* (72 = 1,2×, 90 = 1,5×, 100 = 1,7×, 120 = 2×). O valor que você recebe depende do óculos (o Hz dele) e do PC.
 - **Tela de abertura:** a imagem `smgvr-splash.bmp` na pasta `SMG-VR` aparece por alguns segundos ao iniciar. Apague ou troque o arquivo se quiser.
 - As opções do mod ficam em `smgvr-menu-smg2.ini` (pasta `SMG-VR`; criado quando você mexe no menu).
 - **Gráficos:** o pacote vem com a resolução interna do autor (6×). Se a sua placa de vídeo sofrer, baixe em *Gráficos → Aprimoramentos → Resolução interna*.
