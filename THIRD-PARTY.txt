@@ -1,0 +1,13 @@
+Third-party notices
+
+Dolphin VR Redux (DolphinXR) by iChris4 (Christophe): https://github.com/iChris4/dolphinXR (branch openxr-work), a fork of the Dolphin Emulator.
+Dolphin is licensed under the GNU General Public License, version 2 or later (see the LICENSES folder in the complete package and https://github.com/dolphin-emu/dolphin/blob/master/COPYING).
+The "complete" package contains an unmodified build of Dolphin VR Redux (Dolphin.exe, Qt libraries, plugins, language files, Sys data) plus configuration files.
+The corresponding source code is available at the repository above (and the original Dolphin source at https://github.com/dolphin-emu/dolphin).
+Qt is used under the LGPL v3; the Qt libraries are shipped unmodified as dynamic libraries.
+
+Khronos OpenXR headers: Apache License 2.0 (licenses/OpenXR-Apache-2.0.txt).
+The headers are used to build the VR layer (smgvr_layer.dll). No OpenXR loader is bundled.
+
+The mod-only package (SuperMarioGalaxy2-VR-v<version>.zip) does not include the Dolphin emulator or any game files.
+Super Mario Galaxy 2 is a trademark of Nintendo; a legally obtained copy of the game is required.

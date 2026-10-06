@@ -1,0 +1,11 @@
+{
+    "file_format_version": "1.0.0",
+    "api_layer": {
+        "name": "XR_APILAYER_MCASSADOR_smg_vr",
+        "library_path": "./smgvr_layer.dll",
+        "api_version": "1.0",
+        "implementation_version": "1",
+        "description": "Super Mario Galaxy VR (Dolphin): walk direction + in-headset menu",
+        "disable_environment": "DISABLE_SMG_VR_LAYER"
+    }
+}
