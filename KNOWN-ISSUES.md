@@ -8,8 +8,10 @@
 - **Só a versão americana** do jogo (SB4E01).
 - **Velocidade do jogo e FPS.** O Galaxy avança um passo por quadro. O mod mantém o jogo em 60 passos por segundo em 72, 90, 100 e 120 quadros (opção *Velocidade do jogo em FPS alto*, padrão *Normal*), medindo a taxa real; entre 61 e 119 quadros o mundo repete um quadro de vez em quando (60 e 120 não têm esse tranco). Se o FPS cair abaixo de 60 o jogo fica em câmera lenta, e o óculos limita a taxa ao Hz dele (72 Hz = no máximo uns 72 quadros). Com *Acelera com o FPS* o jogo roda 1,2×, 1,5×, 1,7× ou 2× mais rápido.
   Testado só em 65 a 72 quadros por segundo; 90 e 120 de verdade ainda não foram testados.
-- **Formas do Mario:** Mario normal, Abelha e Pedra têm corpo e luvas em primeira pessoa. Nuvem, Fantasma/Boo, Mola, Fogo/Gelo e Tornado estão em ajuste: o corpo pode aparecer de um jeito estranho.
-- **Câmera 200 e terceira pessoa** foram menos ajustadas que a primeira pessoa e têm menos FPS (o jogo desenha uma área maior).
+- **Formas do Mario:** Mario normal, Abelha, Pedra e Nuvem têm corpo e luvas em primeira pessoa. Fantasma/Boo, Mola, Fogo/Gelo e Tornado estão em ajuste: o corpo pode aparecer de um jeito estranho.
+- **Câmera 200 e câmera original do jogo** foram menos ajustadas que a primeira pessoa e podem ter alguns FPS a menos (o jogo desenha uma área maior, mesmo com o corte de objetos).
+- **Trechos pesados:** em partes de fases com muitos objetos e efeitos (por exemplo, muitas nuvens) o FPS pode cair para perto de 45 em uma placa potente. O limite está na thread de vídeo do Dolphin (Direct3D 11); os cortes de objetos e de distância ajudam, e baixar a resolução interna ajuda pouco nesse caso.
+- **Corte por distância (padrão Perto, 80 m):** o que está além da distância não é desenhado, então planetas e cenário muito distantes podem sumir. Se isso incomodar, use *Longe* ou *Desligado* (menu → aba **Jogo**).
 - **Cinemáticas e vídeos** podem ter pequenos erros de enquadramento.
 - **Voos e transformações** (águia, Yoshi, casco, patinação) já têm câmera própria, mas ainda podem ter momentos em que o corpo passa na frente da câmera; conte como foi enviando o `smgvr.log`.
 - **Rastreamento de mãos** está no começo: o dedo escolhe a pose da luva (aberta, fechada, apontando...), mas os dedos ainda não se mexem um a um.

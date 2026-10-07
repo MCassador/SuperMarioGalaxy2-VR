@@ -1,13 +1,23 @@
-# Versão 0.2 beta (MCassador)
+# Versão 0.3 beta (MCassador)
 
-Segunda versão pública do Super Mario Galaxy 2 VR, sobre o **Dolphin VR Redux de iChris4** (https://github.com/iChris4/dolphinXR).
+Terceira versão pública do Super Mario Galaxy 2 VR, sobre o **Dolphin VR Redux de iChris4** (https://github.com/iChris4/dolphinXR).
 
 ## Arquivos do release
 
-- **`SuperMarioGalaxy2-VR-v0.2-completo-com-Dolphin.zip`**: Dolphin VR Redux em modo portátil + o mod + as configurações do autor (controles do Quest, gráficos, códigos, cheats). Extrair e rodar `Jogar-SMG2-VR.bat`.
-- **`SuperMarioGalaxy2-VR-v0.2.zip`**: só o mod, com instalador (`instalar-smg2-vr.bat`), para quem já tem o Dolphin VR Redux.
+- **`SuperMarioGalaxy2-VR-v0.3-completo-com-Dolphin.zip`**: Dolphin VR Redux em modo portátil + o mod + as configurações do autor (controles do Quest, gráficos, códigos, cheats). Extrair e rodar `Jogar-SMG2-VR.bat`.
+- **`SuperMarioGalaxy2-VR-v0.3.zip`**: só o mod, com instalador (`instalar-smg2-vr.bat`), para quem já tem o Dolphin VR Redux.
 
-## Novidades da 0.2
+## Novidades da 0.3
+
+- **Corte de objetos mais esperto:** o mod manda o jogo desenhar só o que está na direção para onde você olha (cone de 170°, ajustável em *Corte de objetos*) e, dentro dele, **não desenha o que está além de uma distância** (menu → aba **Jogo** → *Corte por distância*: Longe 300 m, Médio 150 m, **Perto 80 m (padrão)** ou Desligado). Nas fases grandes a maior parte dos objetos está longe da câmera, então isso tira trabalho do Dolphin.
+- **Câmera original do jogo com mais FPS:** ela também passou a usar o corte pela cabeça (antes desenhava o cenário inteiro e ficava uns 10 FPS abaixo da primeira pessoa no mesmo lugar).
+- **Trocar de câmera sem piscar:** a cabeça, o corpo e as nuvens do chapéu do Mario Nuvem não somem mais por instantes ao trocar de câmera (primeira pessoa, câmera 200, câmera do jogo).
+- **Mario Nuvem:** corpo, braços e luvas como no Mario normal em primeira pessoa; as nuvenzinhas do chapéu ficam fora da frente da cabeça e voltam na hora ao sair da primeira pessoa.
+- **Braços:** a manga não se torce mais quando você vira o pulso até o fim, e o braço não estica nem se deforma nas cenas em que a mão fica longe.
+- **Velocidade do jogo em FPS alto:** o controle ficou mais preciso (acompanha a taxa real e não acumula erro); continua em 60 passos por segundo.
+- **Menu novo:** mais largo e mais fácil de ler, com barras, rolagem e títulos de seção.
+
+## Novidades da 0.2 (já vinham antes)
 
 - **Velocidade normal em FPS alto:** a lógica do jogo fica em 60 passos por segundo mesmo com 72, 90, 100 ou 120 quadros (o mod mede a taxa real e se ajusta). A opção *Velocidade do jogo em FPS alto* do menu volta ao comportamento antigo (jogo acelerado).
 - **Quadros por segundo:** agora com 60, 72, 90, 100 e 120 no menu (aba **Jogo**), e o menu grava no arquivo que o Dolphin realmente lê, então a escolha passa a valer ao reabrir o jogo.
@@ -38,6 +48,7 @@ Segunda versão pública do Super Mario Galaxy 2 VR, sobre o **Dolphin VR Redux 
 - Quadros por segundo: **60** (velocidade normal do jogo).
 - Giro do analógico direito: 45°.
 - Altura extra no Yoshi: +30.
+- Corte de objetos: **Leve (170°)**; corte por distância: **Perto (80 m)**.
 - Resolução interna do Dolphin: 6× (a do autor; baixe se a sua placa sofrer).
 
 ## Instalação
