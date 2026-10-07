@@ -1,6 +1,6 @@
 # Super Mario Galaxy 2 VR
 
-**Versão 0.3 (beta)** · Windows x64 · Dolphin VR Redux · OpenXR · Meta Quest 3 (Virtual Desktop)
+**Versão 0.4 (beta)** · Windows x64 · Dolphin VR Redux · OpenXR · Meta Quest 3 (Virtual Desktop)
 
 O **Super Mario Galaxy 2** (versão americana, SB4E01) em realidade virtual, dentro do **Dolphin VR Redux**:
 primeira pessoa com o corpo, os braços e as luvas do Mario nos seus controles, três câmeras e um
@@ -18,8 +18,8 @@ O Dolphin é um software livre (GPLv2 ou posterior) do Dolphin Emulator Project.
 
 | Arquivo | Para quem |
 | --- | --- |
-| **`SuperMarioGalaxy2-VR-v0.3-completo-com-Dolphin.zip`** | Quem quer só extrair e jogar. Já vem com o **Dolphin VR Redux** pronto (modo portátil) e **todas as configurações do autor**: mapeamento dos controles do Quest, gráficos, códigos do jogo e o mod. Você só aponta para o seu jogo. |
-| **`SuperMarioGalaxy2-VR-v0.3.zip`** | Quem já tem o Dolphin VR Redux instalado e quer só o mod (instalador automático). |
+| **`SuperMarioGalaxy2-VR-v0.4-completo-com-Dolphin.zip`** | Quem quer só extrair e jogar. Já vem com o **Dolphin VR Redux** pronto (modo portátil) e **todas as configurações do autor**: mapeamento dos controles do Quest, gráficos, códigos do jogo e o mod. Você só aponta para o seu jogo. |
+| **`SuperMarioGalaxy2-VR-v0.4.zip`** | Quem já tem o Dolphin VR Redux instalado e quer só o mod (instalador automático). |
 
 > **Nenhum dos dois contém o jogo.** Você precisa da sua própria cópia do Super Mario Galaxy 2 (versão americana).
 >
@@ -49,7 +49,8 @@ O mapa de mundos e os menus do jogo ficam sempre na câmera original.
 - **Yoshi**: a câmera sobe um pouco (*Altura extra no Yoshi*) e acompanha a cabeça dele nos pulos e curvas.
 - **Braços sempre braços**: o braço não estica mais como um tubo quando a mão fica longe do corpo (a luva pode parar um pouco antes do controle em poses extremas), e nas cenas em que o Mario fica a vários metros da câmera o mod usa os **braços do próprio jogo**, sem o "cone" esticado do peito dele até a sua luva.
 - **Livro do prólogo**: a página branca do livro de figuras, que ficava flutuando na frente da vista no prólogo e nas primeiras fases, fica escondida (menu → aba **Jogo** → *Livro do prólogo*; o texto da história continua).
-- **Corte de objetos**: só é desenhado o que está na direção para onde você olha (cone de 170°) e, dentro dele, o que está mais perto que **80 m** (menu → aba **Jogo** → *Corte de objetos* e *Corte por distância*: Longe 300 m, Médio 150 m, Perto 80 m ou Desligado). Dá mais FPS nas fases pesadas, inclusive na câmera original do jogo. Se algo distante sumir que não devia, suba para *Longe* ou desligue.
+- **Corte de objetos**: só é desenhado o que está na direção para onde você olha (cone de 170°) e, dentro dele, o que está mais perto que **80 m** (menu → aba **Jogo** → *Corte de objetos* e *Corte por distância*: Longe 300 m, Médio 150 m, Perto 80 m ou Desligado). Dá mais FPS nas fases pesadas, inclusive na câmera original do jogo. O corte por distância pausa sozinho em cenas, conversas e voos rápidos. Se algo distante sumir que não devia, suba para *Longe* ou desligue.
+- **Menu em português e inglês** (primeira linha da aba **Câmeras**) e **giro suave** opcional do analógico direito (*Tipo de giro* e *Velocidade do giro suave*).
 - **Mario Nuvem**: corpo, braços e luvas como o Mario normal; as nuvens do chapéu ficam fora da vista em primeira pessoa e a troca de câmera não faz nada piscar.
 - **Casco de tartaruga** (nado debaixo d'água): o casco vira para onde a sua cabeça olha; o **grip direito** atira.
 - **Fluzzard (a águia)**: a câmera acompanha a direção do voo, sem o corpo da ave entrar na sua cabeça.
@@ -62,10 +63,10 @@ O mapa de mundos e os menus do jogo ficam sempre na câmera original.
 
 ## Dica importante: FPS e velocidade do jogo
 
-O Galaxy conta o tempo em quadros: sozinho, a 90 FPS ele ficaria 50% mais rápido. O mod evita isso: a lógica do jogo fica em **60 passos por segundo** e só o desenho segue a taxa de quadros que o seu PC e o seu óculos entregam (a cabeça é acompanhada a cada quadro). O mod mede a taxa real e se ajusta, então o jogo fica em velocidade normal mesmo quando o FPS oscila (nos testes do autor, 59 a 61 passos por segundo com a tela entre 65 e 72 quadros).
-Para escolher a taxa: menu do mod (B + Y) → aba **Jogo** → **Quadros/s** (**60, 72, 90, 100 ou 120**; vale ao reabrir o jogo). O que você de fato recebe depende do óculos e do PC: com o óculos em 72 Hz, por exemplo, o jogo não passa de uns 72 quadros por segundo; 90 ou 120 só ajudam se você subir o Hz do óculos (Virtual Desktop) e a placa de vídeo aguentar.
-A opção **Velocidade do jogo em FPS alto** (mesma aba) permite voltar ao comportamento antigo: *Acelera com o FPS* (72 = 1,2×, 90 = 1,5×, 100 = 1,7×, 120 = 2×).
-Limite: entre 61 e 119 quadros o mundo repete um quadro de vez em quando (a 60 e a 120 não há esse tranco); a cabeça, as mãos e a imagem continuam suaves. Se o FPS cair abaixo de 60, o jogo fica em câmera lenta, como sempre foi.
+O Galaxy conta o tempo em quadros: a 90 FPS ele fica 50% mais rápido, e se o FPS cai, fica em câmera lenta. O pacote vem em **60 quadros** (velocidade normal).
+Para escolher a taxa: menu do mod (B + Y) → aba **Jogo** → **Quadros/s** (**60, 72, 90, 100 ou 120**; vale ao reabrir o jogo). O que você recebe de fato depende do óculos e do PC: com o óculos em 72 Hz o jogo não passa de uns 72 quadros.
+A opção **Velocidade do jogo em FPS alto** (mesma aba) vem em *Acelera com o FPS* (72 = 1,2×, 90 = 1,5×, 100 = 1,7×, 120 = 2×). Para manter o jogo em **60 passos por segundo** mesmo com 72 ou mais quadros, escolha *Normal (60 passos/s)*: o mod mede a taxa real e se ajusta (nos testes do autor, 59 a 61 passos por segundo com a tela entre 65 e 72 quadros).
+Limite do modo *Normal*: entre 61 e 119 quadros o mundo repete um quadro de vez em quando (a 60 e a 120 não há esse tranco); a cabeça, as mãos e a imagem continuam suaves. Se o FPS cair abaixo de 60, o jogo fica em câmera lenta, como sempre foi.
 
 ## Controles (Quest)
 

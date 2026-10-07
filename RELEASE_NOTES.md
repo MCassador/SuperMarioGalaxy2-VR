@@ -1,13 +1,21 @@
-# Versão 0.3 beta (MCassador)
+# Versão 0.4 beta (MCassador)
 
-Terceira versão pública do Super Mario Galaxy 2 VR, sobre o **Dolphin VR Redux de iChris4** (https://github.com/iChris4/dolphinXR).
+Quarta versão pública do Super Mario Galaxy 2 VR, sobre o **Dolphin VR Redux de iChris4** (https://github.com/iChris4/dolphinXR).
 
 ## Arquivos do release
 
-- **`SuperMarioGalaxy2-VR-v0.3-completo-com-Dolphin.zip`**: Dolphin VR Redux em modo portátil + o mod + as configurações do autor (controles do Quest, gráficos, códigos, cheats). Extrair e rodar `Jogar-SMG2-VR.bat`.
-- **`SuperMarioGalaxy2-VR-v0.3.zip`**: só o mod, com instalador (`instalar-smg2-vr.bat`), para quem já tem o Dolphin VR Redux.
+- **`SuperMarioGalaxy2-VR-v0.4-completo-com-Dolphin.zip`**: Dolphin VR Redux em modo portátil + o mod + as configurações do autor (controles do Quest, gráficos, códigos, cheats). Extrair e rodar `Jogar-SMG2-VR.bat`.
+- **`SuperMarioGalaxy2-VR-v0.4.zip`**: só o mod, com instalador (`instalar-smg2-vr.bat`), para quem já tem o Dolphin VR Redux.
 
-## Novidades da 0.3
+## Novidades da 0.4
+
+- **Giro suave do analógico direito (opcional):** em vez dos passos de 45°, a visão gira de forma contínua enquanto você segura o analógico. Menu, aba **Câmeras**: *Tipo de giro* e *Velocidade do giro suave* (de 45°/s a 180°/s). O padrão continua em passos.
+- **Menu em português e inglês:** a primeira linha da aba **Câmeras** é *Idioma / Language*. No primeiro uso o menu segue o idioma do Windows.
+- **Corte por distância pausa sozinho** em cenas, conversas e viagens rápidas (Estrela Lançadora, canhão): o planeta para onde você voa e o cenário mostrado nas cenas não somem mais. Fora disso, o corte continua como você configurou.
+- **Menu zerado:** os ajustes de câmera (*frente / trás*, *acima / abaixo* e *à frente: andando/pulando*) agora começam em 0; os valores que o autor usava ficam como base por baixo deles. Esses três ajustes mudaram de nome no arquivo de configurações, então **os valores salvos da versão 0.3 não são lidos** e a câmera volta ao padrão do autor.
+- **Velocidade do jogo em FPS alto:** o padrão agora é *Acelera com o FPS* (a 60 quadros não muda nada). Para manter 60 passos por segundo em 72, 90, 100 ou 120 quadros, escolha *Normal (60 passos/s)*.
+
+## Novidades da 0.3 (já vinham antes)
 
 - **Corte de objetos mais esperto:** o mod manda o jogo desenhar só o que está na direção para onde você olha (cone de 170°, ajustável em *Corte de objetos*) e, dentro dele, **não desenha o que está além de uma distância** (menu → aba **Jogo** → *Corte por distância*: Longe 300 m, Médio 150 m, **Perto 80 m (padrão)** ou Desligado). Nas fases grandes a maior parte dos objetos está longe da câmera, então isso tira trabalho do Dolphin.
 - **Câmera original do jogo com mais FPS:** ela também passou a usar o corte pela cabeça (antes desenhava o cenário inteiro e ficava uns 10 FPS abaixo da primeira pessoa no mesmo lugar).
@@ -45,7 +53,9 @@ Terceira versão pública do Super Mario Galaxy 2 VR, sobre o **Dolphin VR Redux
 
 ## Padrões desta versão
 
-- Quadros por segundo: **60** (velocidade normal do jogo).
+- Quadros por segundo: **60**.
+- Velocidade do jogo em FPS alto: **Acelera com o FPS** (só faz diferença acima de 60 quadros).
+- Idioma do menu: o do Windows (português ou inglês).
 - Giro do analógico direito: 45°.
 - Altura extra no Yoshi: +30.
 - Corte de objetos: **Leve (170°)**; corte por distância: **Perto (80 m)**.
