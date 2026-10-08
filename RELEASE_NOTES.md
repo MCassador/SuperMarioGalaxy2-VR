@@ -1,13 +1,22 @@
-# Versão 0.4 beta (MCassador)
+# Versão 0.5 beta (MCassador)
 
-Quarta versão pública do Super Mario Galaxy 2 VR, sobre o **Dolphin VR Redux de iChris4** (https://github.com/iChris4/dolphinXR).
+Quinta versão pública do Super Mario Galaxy 2 VR, sobre o **Dolphin VR Redux de iChris4** (https://github.com/iChris4/dolphinXR).
 
 ## Arquivos do release
 
-- **`SuperMarioGalaxy2-VR-v0.4-completo-com-Dolphin.zip`**: Dolphin VR Redux em modo portátil + o mod + as configurações do autor (controles do Quest, gráficos, códigos, cheats). Extrair e rodar `Jogar-SMG2-VR.bat`.
-- **`SuperMarioGalaxy2-VR-v0.4.zip`**: só o mod, com instalador (`instalar-smg2-vr.bat`), para quem já tem o Dolphin VR Redux.
+- **`SuperMarioGalaxy2-VR-v0.5-completo-com-Dolphin.zip`**: Dolphin VR Redux em modo portátil + o mod + as configurações do autor (controles do Quest, gráficos, códigos, cheats). Extrair e rodar `Jogar-SMG2-VR.bat`.
+- **`SuperMarioGalaxy2-VR-v0.5.zip`**: só o mod, com instalador (`instalar-smg2-vr.bat`), para quem já tem o Dolphin VR Redux.
 
-## Novidades da 0.4
+## Novidades da 0.5
+
+- **Yoshi come o que você aponta com o controle direito.** Antes o ponteiro do jogo vinha de uma tela plana do Dolphin e não batia com o que o óculos mostra, então a bolinha vermelha não ficava no bicho.
+  - **1ª pessoa:** o ponteiro do jogo segue a direção real do controle.
+  - **Câmera 200 e câmera original:** o jogo procura o alvo exatamente na linha do controle, de qualquer ângulo (de lado, para cima, de costas), e o mod desenha a **própria bolinha vermelha** nessa linha, fora do quadrado da HUD. A bolinha do jogo fica escondida enquanto você está no Yoshi.
+  - Novo código no jogo: *Ponteiro do Yoshi (VR)* (já vem ligado).
+- **Pausa só no botão Menu do controle esquerdo:** na câmera original, empurrar o analógico direito para a esquerda (botão − do Wiimote) abria a pausa. O − não pausa mais.
+- **Rastro do braço ao girar a visão:** ao girar com o analógico direito (em passos ou suave) o braço não deixa mais um "vulto" para o lado oposto por um ou dois quadros.
+
+## Novidades da 0.4 (já vinham antes)
 
 - **Giro suave do analógico direito (opcional):** em vez dos passos de 45°, a visão gira de forma contínua enquanto você segura o analógico. Menu, aba **Câmeras**: *Tipo de giro* e *Velocidade do giro suave* (de 45°/s a 180°/s). O padrão continua em passos.
 - **Menu em português e inglês:** a primeira linha da aba **Câmeras** é *Idioma / Language*. No primeiro uso o menu segue o idioma do Windows.

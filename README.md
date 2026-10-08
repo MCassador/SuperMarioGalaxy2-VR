@@ -1,6 +1,6 @@
 # Super Mario Galaxy 2 VR
 
-**Versão 0.4 (beta)** · Windows x64 · Dolphin VR Redux · OpenXR · Meta Quest 3 (Virtual Desktop)
+**Versão 0.5 (beta)** · Windows x64 · Dolphin VR Redux · OpenXR · Meta Quest 3 (Virtual Desktop)
 
 O **Super Mario Galaxy 2** (versão americana, SB4E01) em realidade virtual, dentro do **Dolphin VR Redux**:
 primeira pessoa com o corpo, os braços e as luvas do Mario nos seus controles, três câmeras e um
@@ -18,8 +18,8 @@ O Dolphin é um software livre (GPLv2 ou posterior) do Dolphin Emulator Project.
 
 | Arquivo | Para quem |
 | --- | --- |
-| **`SuperMarioGalaxy2-VR-v0.4-completo-com-Dolphin.zip`** | Quem quer só extrair e jogar. Já vem com o **Dolphin VR Redux** pronto (modo portátil) e **todas as configurações do autor**: mapeamento dos controles do Quest, gráficos, códigos do jogo e o mod. Você só aponta para o seu jogo. |
-| **`SuperMarioGalaxy2-VR-v0.4.zip`** | Quem já tem o Dolphin VR Redux instalado e quer só o mod (instalador automático). |
+| **`SuperMarioGalaxy2-VR-v0.5-completo-com-Dolphin.zip`** | Quem quer só extrair e jogar. Já vem com o **Dolphin VR Redux** pronto (modo portátil) e **todas as configurações do autor**: mapeamento dos controles do Quest, gráficos, códigos do jogo e o mod. Você só aponta para o seu jogo. |
+| **`SuperMarioGalaxy2-VR-v0.5.zip`** | Quem já tem o Dolphin VR Redux instalado e quer só o mod (instalador automático). |
 
 > **Nenhum dos dois contém o jogo.** Você precisa da sua própria cópia do Super Mario Galaxy 2 (versão americana).
 >
@@ -46,7 +46,7 @@ O mapa de mundos e os menus do jogo ficam sempre na câmera original.
 - **Altura da câmera estável**: ela fica sempre na mesma posição ao andar, correr e pular. Só muda onde precisa acompanhar o corpo (cipó e barra de balanço, Yoshi, casco, águia).
 - **Room scale automático**: se você virar o corpo ou sair do lugar, a câmera volta para o corpo do Mario depois de um instante (opção *Centralizar sozinho* do menu). Se você senta ou levanta e fica ali, a **altura** também se ajusta (menos com *Agachar de verdade* ligado).
 - **Seções 2D** (as paredes da Honeybloom e outras): o analógico esquerdo anda ao longo do plano em relação a para onde você olha, e o analógico direito gira a visão em passos (45° por padrão, ajustável).
-- **Yoshi**: a câmera sobe um pouco (*Altura extra no Yoshi*) e acompanha a cabeça dele nos pulos e curvas.
+- **Yoshi**: a câmera sobe um pouco (*Altura extra no Yoshi*) e acompanha a cabeça dele nos pulos e curvas. Ele come o que você aponta com o **controle direito**, em qualquer câmera; na câmera 200 e na original o mod desenha uma bolinha vermelha própria na linha do controle (sem o limite do quadrado da HUD).
 - **Braços sempre braços**: o braço não estica mais como um tubo quando a mão fica longe do corpo (a luva pode parar um pouco antes do controle em poses extremas), e nas cenas em que o Mario fica a vários metros da câmera o mod usa os **braços do próprio jogo**, sem o "cone" esticado do peito dele até a sua luva.
 - **Livro do prólogo**: a página branca do livro de figuras, que ficava flutuando na frente da vista no prólogo e nas primeiras fases, fica escondida (menu → aba **Jogo** → *Livro do prólogo*; o texto da história continua).
 - **Corte de objetos**: só é desenhado o que está na direção para onde você olha (cone de 170°) e, dentro dele, o que está mais perto que **80 m** (menu → aba **Jogo** → *Corte de objetos* e *Corte por distância*: Longe 300 m, Médio 150 m, Perto 80 m ou Desligado). Dá mais FPS nas fases pesadas, inclusive na câmera original do jogo. O corte por distância pausa sozinho em cenas, conversas e voos rápidos. Se algo distante sumir que não devia, suba para *Longe* ou desligue.
