@@ -1,13 +1,19 @@
-# Versão 0.6 beta (MCassador)
+# Versão 0.7 beta (MCassador)
 
-Sexta versão pública do Super Mario Galaxy 2 VR, sobre o **Dolphin VR Redux de iChris4** (https://github.com/iChris4/dolphinXR).
+Sétima versão pública do Super Mario Galaxy 2 VR, sobre o **Dolphin VR Redux de iChris4** (https://github.com/iChris4/dolphinXR).
 
 ## Arquivos do release
 
-- **`SuperMarioGalaxy2-VR-v0.6-completo-com-Dolphin.zip`**: Dolphin VR Redux em modo portátil + o mod + as configurações do autor (controles do Quest, gráficos, códigos, cheats). Extrair e rodar `Jogar-SMG2-VR.bat`.
-- **`SuperMarioGalaxy2-VR-v0.6.zip`**: só o mod, com instalador (`instalar-smg2-vr.bat`), para quem já tem o Dolphin VR Redux.
+- **`SuperMarioGalaxy2-VR-v0.7-completo-com-Dolphin.zip`**: Dolphin VR Redux em modo portátil + o mod + as configurações do autor (controles do Quest, gráficos, códigos, cheats). Extrair e rodar `Jogar-SMG2-VR.bat`.
+- **`SuperMarioGalaxy2-VR-v0.7.zip`**: só o mod, com instalador (`instalar-smg2-vr.bat`), para quem já tem o Dolphin VR Redux.
 
-## Novidades da 0.6
+## Novidades da 0.7
+
+- **Ponteiro de estrela livre na 1ª pessoa:** ele segue o controle direito para qualquer lado, também olhando para os lados, para cima ou para trás (antes parava na borda do quadro da HUD). O jogo procura o que você aponta na linha do controle, os fragmentos de estrela saem nessa direção e o mod desenha uma bolinha vermelha na ponta. Em conversas, cenas, pausa e menus volta o ponteiro normal do jogo.
+- **HUD no pulso só na 1ª pessoa e só dentro da fase:** o painel não aparece mais nos menus; na câmera 200 e na câmera do jogo volta a HUD original.
+- **Câmera 200 e câmera do jogo:** ao levantar, sentar ou dar um passo, a câmera volta para trás do Mario em cerca de um segundo (antes ficava deslocada).
+
+## Novidades da 0.6 (já vinham antes)
 
 - **HUD da fase** (menu do mod, aba **Jogo**): *Fixa (como o jogo)* (padrão), *Segue a cabeça* (vida, moedas, fragmentos e estrelas deslizam para onde você olha) ou *No pulso esquerdo*:
   - **1ª pessoa:** levante a mão esquerda como quem olha um relógio, com as costas da mão para você, e aparece um painel 3D no pulso, uma linha embaixo da outra: Vida, Estrelas, Moedas, Fragmentos e Mario (vidas). Abaixando a mão, ele some.
