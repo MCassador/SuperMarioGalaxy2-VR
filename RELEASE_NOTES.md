@@ -1,13 +1,20 @@
-# Versão 0.5 beta (MCassador)
+# Versão 0.6 beta (MCassador)
 
-Quinta versão pública do Super Mario Galaxy 2 VR, sobre o **Dolphin VR Redux de iChris4** (https://github.com/iChris4/dolphinXR).
+Sexta versão pública do Super Mario Galaxy 2 VR, sobre o **Dolphin VR Redux de iChris4** (https://github.com/iChris4/dolphinXR).
 
 ## Arquivos do release
 
-- **`SuperMarioGalaxy2-VR-v0.5-completo-com-Dolphin.zip`**: Dolphin VR Redux em modo portátil + o mod + as configurações do autor (controles do Quest, gráficos, códigos, cheats). Extrair e rodar `Jogar-SMG2-VR.bat`.
-- **`SuperMarioGalaxy2-VR-v0.5.zip`**: só o mod, com instalador (`instalar-smg2-vr.bat`), para quem já tem o Dolphin VR Redux.
+- **`SuperMarioGalaxy2-VR-v0.6-completo-com-Dolphin.zip`**: Dolphin VR Redux em modo portátil + o mod + as configurações do autor (controles do Quest, gráficos, códigos, cheats). Extrair e rodar `Jogar-SMG2-VR.bat`.
+- **`SuperMarioGalaxy2-VR-v0.6.zip`**: só o mod, com instalador (`instalar-smg2-vr.bat`), para quem já tem o Dolphin VR Redux.
 
-## Novidades da 0.5
+## Novidades da 0.6
+
+- **HUD da fase** (menu do mod, aba **Jogo**): *Fixa (como o jogo)* (padrão), *Segue a cabeça* (vida, moedas, fragmentos e estrelas deslizam para onde você olha) ou *No pulso esquerdo*:
+  - **1ª pessoa:** levante a mão esquerda como quem olha um relógio, com as costas da mão para você, e aparece um painel 3D no pulso, uma linha embaixo da outra: Vida, Estrelas, Moedas, Fragmentos e Mario (vidas). Abaixando a mão, ele some.
+  - **Câmera 200 e 3ª pessoa:** o mesmo painel fica sempre visível, no canto de baixo à esquerda da visão.
+  - Os ícones são os do jogo quando você tem o pacote de texturas HD instalado no Dolphin (`Load\Textures\<ID do jogo>`); sem ele, o painel usa formas simples.
+
+## Novidades da 0.5 (já vinham antes)
 
 - **Yoshi come o que você aponta com o controle direito.** Antes o ponteiro do jogo vinha de uma tela plana do Dolphin e não batia com o que o óculos mostra, então a bolinha vermelha não ficava no bicho.
   - **1ª pessoa:** o ponteiro do jogo segue a direção real do controle.

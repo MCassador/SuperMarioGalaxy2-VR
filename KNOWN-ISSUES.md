@@ -22,3 +22,4 @@
 - **Mod em desenvolvimento.** Se encontrar algo, envie o `smgvr.log` e diga o que estava fazendo.
 - **Novidades da 0.4 pouco testadas:** o giro suave, o menu em inglês e a pausa do corte por distância em cenas e voos foram testados só pelo autor e por pouco tempo.
 - **Yoshi (0.5):** as marcas vermelhas que o jogo põe em cima do alvo travado continuam sendo da HUD, então só aparecem dentro do quadrado da tela do jogo (a bolinha da mira do mod não tem esse limite). Em pé ao lado do Yoshi, sem montar, a mira também vem do controle. A correção do rastro do braço ao girar foi testada pouco.
+- **HUD da fase (0.6):** o painel fixo na câmera 200 e na 3ª pessoa foi pouco testado. Avisos e caixas de diálogo continuam no quadro normal da HUD.
