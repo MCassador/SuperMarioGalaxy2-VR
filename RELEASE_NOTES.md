@@ -1,13 +1,22 @@
-# Versão 0.8 beta (MCassador)
+# Versão 0.9 beta (MCassador)
 
-Oitava versão pública do Super Mario Galaxy 2 VR, sobre o **Dolphin VR Redux de iChris4** (https://github.com/iChris4/dolphinXR).
+Nona versão pública do Super Mario Galaxy 2 VR, sobre o **Dolphin VR Redux de iChris4** (https://github.com/iChris4/dolphinXR).
 
 ## Arquivos do release
 
-- **`SuperMarioGalaxy2-VR-v0.8-completo-com-Dolphin.zip`**: Dolphin VR Redux em modo portátil + o mod + as configurações do autor (controles do Quest, gráficos, códigos, cheats). Extrair e rodar `Jogar-SMG2-VR.bat`.
-- **`SuperMarioGalaxy2-VR-v0.8.zip`**: só o mod, com instalador (`instalar-smg2-vr.bat`), para quem já tem o Dolphin VR Redux.
+- **`SuperMarioGalaxy2-VR-v0.9-completo-com-Dolphin.zip`**: Dolphin VR Redux em modo portátil + o mod + as configurações do autor (controles do Quest, gráficos, códigos, cheats). Extrair e rodar `Jogar-SMG2-VR.bat`.
+- **`SuperMarioGalaxy2-VR-v0.9.zip`**: só o mod, com instalador (`instalar-smg2-vr.bat`), para quem já tem o Dolphin VR Redux.
 
-## Novidades da 0.8
+## Novidades da 0.9
+
+- **O ponteiro agora acerta de qualquer direção.** A bolinha vermelha já seguia o controle direito para qualquer lado, mas o jogo só aceitava o que você apontava quando você estava de frente para o quadro da HUD. Virado de lado ou de costas, a bolinha ficava certinha em cima do alvo e nada acontecia: o Yoshi não comia o bicho nem a fruta, os fragmentos de estrela não eram pegos e os inimigos não paravam.
+  - **Por que acontecia:** a cada quadro, depois que o mod entrega a posição do ponteiro, o jogo ainda pergunta ao Wiimote do Dolphin se ele está apontando para a tela. O Dolphin calcula isso contra a tela plana da HUD, que fica parada na frente da sala; com você virado para outro lado ele respondia "fora da tela", e o jogo desligava o ponteiro antes de testar qualquer alvo.
+  - **O que mudou:** enquanto o mod controla o ponteiro, essa resposta do Dolphin é ignorada e o jogo continua usando a posição do mod, de qualquer ângulo. Onde volta o ponteiro normal do jogo (conversas, cenas, pausa, menus e escolhas de Sim/Não) nada muda, e a câmera que gira quando o ponteiro encosta na borda da tela continua como antes.
+  - Vem dentro do código *Ponteiro do Yoshi (VR)*, que já vem ligado; não precisa ligar nada.
+  - Detalhe técnico: no `updateDpdInfo` do `StarPointerController` (Galaxy 2 americano, SB4E01), o caminho "fora da tela" grava 0 no byte "na tela" do controle; a instrução que carrega esse 0 (`li r0,0` em `0x80499EEC`) passou a chamar uma rotina de 8 instruções que devolve 1 quando o mod está controlando o ponteiro do 1º controle. O resto do caminho mantém a posição do mod.
+- Vale na 1ª pessoa e também no Yoshi na câmera 200 e na câmera do jogo.
+
+## Novidades da 0.8 (já vinham antes)
 
 - **Corpo e braços acompanham o seu corpo de verdade:** ao virar o corpo na vida real (até dar a volta inteira) ou esticar os braços, o peito do Mario vira para onde estão as suas mãos e cada braço sai do ombro do lado certo. Antes, de costas para a frente da sala, os braços cruzavam e torciam, e esticar piorava.
 - **Room scale na hora:** ao andar, dar um passo ou virar o corpo, a câmera continua em cima do corpo do Mario no mesmo instante (sobra só uma folga de 5 cm para inclinar a cabeça). Antes ela esperava você ficar parado e, sem recentralizar o óculos, às vezes não voltava.

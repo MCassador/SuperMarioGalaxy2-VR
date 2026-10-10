@@ -10,7 +10,7 @@ Você pode escolher entre as duas formas abaixo.
 
 ## Opção A: pacote completo com o Dolphin (recomendado)
 
-Arquivo: **`SuperMarioGalaxy2-VR-v0.8-completo-com-Dolphin.zip`**. Traz o **Dolphin VR Redux** (de [iChris4](https://github.com/iChris4/dolphinXR)) em modo portátil, já com as configurações do autor:
+Arquivo: **`SuperMarioGalaxy2-VR-v0.9-completo-com-Dolphin.zip`**. Traz o **Dolphin VR Redux** (de [iChris4](https://github.com/iChris4/dolphinXR)) em modo portátil, já com as configurações do autor:
 controles do Quest (`WiimoteNew.ini` e o perfil `Mario`), gráficos (`GFX.ini`, resolução interna, ajustes de VR do jogo), cheats ligados, os códigos do jogo e o mod.
 Nada é instalado no seu Dolphin atual e as suas configurações atuais não são tocadas: o pacote usa só a pasta dele (`User`).
 
@@ -26,7 +26,7 @@ O pacote é **portátil**: pode ficar em qualquer pasta, e para desinstalar bast
 
 ## Opção B: só o mod (você já tem o Dolphin VR Redux)
 
-Arquivo: **`SuperMarioGalaxy2-VR-v0.8.zip`**. Requer o **Dolphin VR Redux**, build com OpenXR (ramo *openxr-work*, [releases do iChris4](https://github.com/iChris4/dolphinXR/releases)).
+Arquivo: **`SuperMarioGalaxy2-VR-v0.9.zip`**. Requer o **Dolphin VR Redux**, build com OpenXR (ramo *openxr-work*, [releases do iChris4](https://github.com/iChris4/dolphinXR/releases)).
 
 1. Feche o Dolphin.
 2. Extraia o pacote em **qualquer pasta**. Só se o seu Dolphin for **portátil** (existe um `portable.txt` ao lado do `Dolphin.exe`) é que o pacote deve ser extraído dentro da pasta do Dolphin.
