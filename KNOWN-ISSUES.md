@@ -24,3 +24,4 @@
 - **Yoshi (0.5):** as marcas vermelhas que o jogo põe em cima do alvo travado continuam sendo da HUD, então só aparecem dentro do quadrado da tela do jogo (a bolinha da mira do mod não tem esse limite). Em pé ao lado do Yoshi, sem montar, a mira também vem do controle. A correção do rastro do braço ao girar foi testada pouco.
 - **HUD da fase (0.6):** o painel fixo na câmera 200 e na 3ª pessoa foi pouco testado. Avisos e caixas de diálogo continuam no quadro normal da HUD.
 - **Ponteiro livre (0.7):** o quadro da HUD (avisos, marcas vermelhas) continua fixo na frente; só o ponteiro é livre. Pouco testado.
+- **Corpo real (0.8):** testado no Galaxy 1; no Galaxy 2 foi pouco testado. Correndo, a animação do próprio jogo ainda balança o peito do Mario.

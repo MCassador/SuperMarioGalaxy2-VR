@@ -1,13 +1,20 @@
-# Versão 0.7 beta (MCassador)
+# Versão 0.8 beta (MCassador)
 
-Sétima versão pública do Super Mario Galaxy 2 VR, sobre o **Dolphin VR Redux de iChris4** (https://github.com/iChris4/dolphinXR).
+Oitava versão pública do Super Mario Galaxy 2 VR, sobre o **Dolphin VR Redux de iChris4** (https://github.com/iChris4/dolphinXR).
 
 ## Arquivos do release
 
-- **`SuperMarioGalaxy2-VR-v0.7-completo-com-Dolphin.zip`**: Dolphin VR Redux em modo portátil + o mod + as configurações do autor (controles do Quest, gráficos, códigos, cheats). Extrair e rodar `Jogar-SMG2-VR.bat`.
-- **`SuperMarioGalaxy2-VR-v0.7.zip`**: só o mod, com instalador (`instalar-smg2-vr.bat`), para quem já tem o Dolphin VR Redux.
+- **`SuperMarioGalaxy2-VR-v0.8-completo-com-Dolphin.zip`**: Dolphin VR Redux em modo portátil + o mod + as configurações do autor (controles do Quest, gráficos, códigos, cheats). Extrair e rodar `Jogar-SMG2-VR.bat`.
+- **`SuperMarioGalaxy2-VR-v0.8.zip`**: só o mod, com instalador (`instalar-smg2-vr.bat`), para quem já tem o Dolphin VR Redux.
 
-## Novidades da 0.7
+## Novidades da 0.8
+
+- **Corpo e braços acompanham o seu corpo de verdade:** ao virar o corpo na vida real (até dar a volta inteira) ou esticar os braços, o peito do Mario vira para onde estão as suas mãos e cada braço sai do ombro do lado certo. Antes, de costas para a frente da sala, os braços cruzavam e torciam, e esticar piorava.
+- **Room scale na hora:** ao andar, dar um passo ou virar o corpo, a câmera continua em cima do corpo do Mario no mesmo instante (sobra só uma folga de 5 cm para inclinar a cabeça). Antes ela esperava você ficar parado e, sem recentralizar o óculos, às vezes não voltava.
+- Montado no Yoshi o corpo continua virado para o lado do Yoshi, como antes.
+- **Ponteiro livre:** nas escolhas de Sim/Não volta o ponteiro normal do jogo.
+
+## Novidades da 0.7 (já vinham antes)
 
 - **Ponteiro de estrela livre na 1ª pessoa:** ele segue o controle direito para qualquer lado, também olhando para os lados, para cima ou para trás (antes parava na borda do quadro da HUD). O jogo procura o que você aponta na linha do controle, os fragmentos de estrela saem nessa direção e o mod desenha uma bolinha vermelha na ponta. Em conversas, cenas, pausa e menus volta o ponteiro normal do jogo.
 - **HUD no pulso só na 1ª pessoa e só dentro da fase:** o painel não aparece mais nos menus; na câmera 200 e na câmera do jogo volta a HUD original.
