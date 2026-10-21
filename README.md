@@ -1,6 +1,6 @@
 # Super Mario Galaxy 2 VR
 
-**Versão 0.9 (beta)** · Windows x64 · Dolphin VR Redux · OpenXR · Meta Quest 3 (Virtual Desktop)
+**Versão 0.10 (beta)** · Windows x64 · Dolphin VR Redux · OpenXR · Meta Quest 3 (Virtual Desktop)
 
 O **Super Mario Galaxy 2** (versão americana, SB4E01) em realidade virtual, dentro do **Dolphin VR Redux**:
 primeira pessoa com o corpo, os braços e as luvas do Mario nos seus controles, três câmeras e um
@@ -18,8 +18,8 @@ O Dolphin é um software livre (GPLv2 ou posterior) do Dolphin Emulator Project.
 
 | Arquivo | Para quem |
 | --- | --- |
-| **`SuperMarioGalaxy2-VR-v0.9-completo-com-Dolphin.zip`** | Quem quer só extrair e jogar. Já vem com o **Dolphin VR Redux** pronto (modo portátil) e **todas as configurações do autor**: mapeamento dos controles do Quest, gráficos, códigos do jogo e o mod. Você só aponta para o seu jogo. |
-| **`SuperMarioGalaxy2-VR-v0.9.zip`** | Quem já tem o Dolphin VR Redux instalado e quer só o mod (instalador automático). |
+| **`SuperMarioGalaxy2-VR-v0.10-completo-com-Dolphin.zip`** | Quem quer só extrair e jogar. Já vem com o **Dolphin VR Redux** pronto (modo portátil) e **todas as configurações do autor**: mapeamento dos controles do Quest, gráficos, códigos do jogo e o mod. Você só aponta para o seu jogo. |
+| **`SuperMarioGalaxy2-VR-v0.10.zip`** | Quem já tem o Dolphin VR Redux instalado e quer só o mod (instalador automático). |
 
 > **Nenhum dos dois contém o jogo.** Você precisa da sua própria cópia do Super Mario Galaxy 2 (versão americana).
 >

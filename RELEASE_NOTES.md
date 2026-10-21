@@ -1,13 +1,27 @@
-# Versão 0.9 beta (MCassador)
+# Versão 0.10 beta (MCassador)
 
-Nona versão pública do Super Mario Galaxy 2 VR, sobre o **Dolphin VR Redux de iChris4** (https://github.com/iChris4/dolphinXR).
+Décima versão pública do Super Mario Galaxy 2 VR, sobre o **Dolphin VR Redux de iChris4** (https://github.com/iChris4/dolphinXR).
 
 ## Arquivos do release
 
-- **`SuperMarioGalaxy2-VR-v0.9-completo-com-Dolphin.zip`**: Dolphin VR Redux em modo portátil + o mod + as configurações do autor (controles do Quest, gráficos, códigos, cheats). Extrair e rodar `Jogar-SMG2-VR.bat`.
-- **`SuperMarioGalaxy2-VR-v0.9.zip`**: só o mod, com instalador (`instalar-smg2-vr.bat`), para quem já tem o Dolphin VR Redux.
+- **`SuperMarioGalaxy2-VR-v0.10-completo-com-Dolphin.zip`**: Dolphin VR Redux em modo portátil + o mod + as configurações do autor (controles do Quest, gráficos, códigos, cheats). Extrair e rodar `Jogar-SMG2-VR.bat`.
+- **`SuperMarioGalaxy2-VR-v0.10.zip`**: só o mod, com instalador (`instalar-smg2-vr.bat`), para quem já tem o Dolphin VR Redux.
 
-## Novidades da 0.9
+## Novidades da 0.10
+
+- **As Star Bits (fragmentos de estrela) vão para onde você aponta.** Antes elas saíam de um ponto a 3 m ao lado da câmera e caíam num ponto que não era o da bolinha vermelha ("para lugares aleatórios", "batendo em algo invisível").
+  - **Por que acontecia:** o jogo acha o ponto de queda lendo a profundidade da própria imagem plana no pixel do ponteiro. Com o ponteiro na mão ele fica sempre no centro dessa imagem, então a profundidade era a do que o jogo mostrava no centro, e não a do que o controle aponta. O ponto caía na direção certa, mas na distância errada. Além disso, o tiro começava 3 m ao lado da câmera (como se o jogador 1 atirasse do canto da tela).
+  - **O que mudou:** o ponto de queda agora é o primeiro ponto do cenário que o raio do controle atinge (se o raio não atinge nada, um ponto distante na mesma direção). A Star Bit sai da luva direita do Mario na 1ª pessoa, e do peito do Mario na câmera 200 e na câmera do jogo, e voa até a bolinha vermelha.
+  - O raio enxerga só o cenário, não os inimigos: uma Star Bit só acerta o inimigo que estiver no caminho do voo.
+  - O ponteiro livre (a bolinha vermelha do mod) agora também vale **sempre** na câmera 200 e na câmera do jogo, não só montado no Yoshi. Pausa, mapa, cenas, conversas e as escolhas de Sim/Não continuam com o ponteiro do jogo.
+  - Detalhe técnico: no código *Ponteiro do Yoshi (VR)*, um gancho logo depois do `invProject` do `StarPointerController::storeDataFromCallback` troca o `mWorldPos` pelo resultado de `MR::getFirstPolyOnLineToMap` ao longo do raio (origem e linha escritas pela camada VR numa área livre da memória baixa); outro, no fim de `StarPieceDirector::calcPosCameraShoot`, troca o ponto de partida do tiro pelo ponto que a camada escreve.
+- **O Yoshi solta a língua para onde a bolinha vermelha está, também em morro e rampa.** Antes, mirando para cima num bicho em terreno mais alto ou inclinado, o Yoshi não comia onde a seta da mão apontava.
+  - **Por que acontecia:** o Yoshi vira a cabeça e solta a língua para o ponto onde a mira cruza um plano de chão perto dele. Apontando para cima, o raio não cruza esse plano à frente, e a língua ia para o lado errado.
+  - **O que mudou:** o plano agora passa pelo ponto onde o raio do controle atinge o cenário, então o raio sempre cruza ali e o Yoshi vira e solta a língua na direção da bolinha. Vale na 1ª pessoa, na câmera 200 e na câmera do jogo. O Yoshi continua com o limite de giro da cabeça do próprio jogo.
+- **O círculo vermelho com o "B" fica em cima do bicho.** Antes ele aparecia onde a câmera do jogo projetava o bicho, que na VR não é onde a sua cabeça o vê. Agora a posição vem da linha que sai da sua cabeça, passa pelo bicho e cruza o quadro da HUD. (Ele continua sendo desenhado no quadro da HUD: se esse quadro estiver fora do seu campo de visão, o círculo também.)
+- **HUD no pulso aparece com mais facilidade.** O gesto de olhar o relógio (mão esquerda na frente dos olhos, dorso virado para você) estava apertado demais e ainda tinha um teste que falhava quando você estava virado para um lado que não o da frente da sala. O ângulo ficou mais tolerante e o teste que falhava saiu.
+
+## Novidades da 0.9 (já vinham antes)
 
 - **O ponteiro agora acerta de qualquer direção.** A bolinha vermelha já seguia o controle direito para qualquer lado, mas o jogo só aceitava o que você apontava quando você estava de frente para o quadro da HUD. Virado de lado ou de costas, a bolinha ficava certinha em cima do alvo e nada acontecia: o Yoshi não comia o bicho nem a fruta, os fragmentos de estrela não eram pegos e os inimigos não paravam.
   - **Por que acontecia:** a cada quadro, depois que o mod entrega a posição do ponteiro, o jogo ainda pergunta ao Wiimote do Dolphin se ele está apontando para a tela. O Dolphin calcula isso contra a tela plana da HUD, que fica parada na frente da sala; com você virado para outro lado ele respondia "fora da tela", e o jogo desligava o ponteiro antes de testar qualquer alvo.
